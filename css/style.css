@@ -1,0 +1,797 @@
+/* Общие стили */ 
+summary::marker {
+    content: "";
+  }
+
+ul, li, p, h1, h2, h3, h4, h5, h6, input {
+    padding: 0;
+    margin: 0;
+}
+
+.graphite-bg {
+    background: rgb(69,69,69);
+    background: linear-gradient(90deg, rgba(69,69,69,1) 0%, rgba(34,34,34,1) 100%);
+}
+
+.black-bg {
+    background-color: #232323;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.grey-bg {
+    background: rgb(225,225,225);
+    background: linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(251,250,250,1) 39%, rgba(175,175,175,1) 68%, rgba(136,136,136,1) 100%);
+}
+
+.grey {
+    color: #6b6b6b;
+}
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #262626;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-medium {
+    font-size: 14px;
+}
+
+.text-big {
+    font-size: 18px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.button {
+    font-size: 13px;
+    background-color: #fff;
+    padding: 8px 0;
+    min-width: 160px;
+    color: #262626;
+    text-align: center;
+    border-radius: 23px;
+    border: none;
+    transition: 0.3s;
+}
+
+.button_graphite {
+    padding: 6px 0;
+    background-color: rgb(69,69,69);
+    color: #fff;
+    border-radius: 0 23px 23px 0;
+}
+
+.button-center {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: #232323;
+    color: #fff;
+}
+
+.block-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.block-title_features {
+    margin-bottom: 90px;
+}
+
+.block-title span {
+    color: #6b6b6b;
+}
+
+.title-number {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.title-number_grey {
+    background-color: rgb(69,69,69);
+    color: #fff;
+    padding: 10px;
+    border: 10px solid #dee2eb;
+}
+
+.title-number_black {
+    background-color: #262626;
+}
+
+/* Стили intro-block */
+
+.intro-block {
+    padding-top: 20px;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.menu__nav {
+    order: 2;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.menu__item {  
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #fff;   
+    transition: 0.3s;
+}
+
+.menu__link:hover {
+    color: #c5c5c5;
+}
+
+.airpods-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.airpods-intro__title {
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.airpods-intro__subtitle {
+    max-width: 375px;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+
+.prices {
+    display: flex;
+    gap: 50px;
+    line-height: 18px;
+    margin-bottom: 50px;
+}
+
+.price {
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+
+.price_old {
+    color: #c5c5c5;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.price__title {
+    font-weight: normal;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+.price__cost {
+    font-size: 25px;
+}
+
+.intro-block__img {
+    padding: 15px 0 0;
+}
+
+/* Стили gallery */
+
+.owl-carousel .owl-nav button.owl-prev, 
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    font-size: 40px;
+    margin: 0;
+    height: 100%;
+}
+
+.gallery .owl-carousel {
+    position: relative;
+}
+
+.owl-carousel .owl-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    left: 0;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    right: 0;
+}
+
+.gallery__wrapper {
+    height: 100px;
+    display: flex;
+}
+
+.gallery__img {
+    width: 20%;
+}
+
+/* Стили advantages */
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+
+.advantages__point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    width: 250px;
+    line-height: 12px;
+    color: #fff;
+    padding: 15px 0;
+}
+
+
+.advantages__point:last-child {
+    border: 0;
+    margin: 0;
+}
+
+
+/* Стили features */
+
+.features {
+    padding: 50px 0;
+}
+
+.feature {
+    min-height: 320px;
+    border-radius: 116px;
+    background-color: #fff;
+    position: relative;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #6b6b6b;
+    font-size: 10px;
+    box-shadow: 9px 5px 10px 2px rgba(196, 196, 196, 0.09);
+    margin: 0 auto;
+}
+
+
+.feature__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    -webkit-box-shadow: 5px 5px 22px 3px rgba(90, 92, 93, 0.25);
+    -moz-box-shadow: 5px 5px 22px 3px rgba(90, 92, 93, 0.25);
+    box-shadow: 5px 5px 22px 3px rgba(90, 92, 93, 0.25);
+}
+
+.feature__title {
+    display: flex;
+    font-weight: bold;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.feature-title__number {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.feature__title-text {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 12px;
+    position: relative;
+    right: 18px;
+    -webkit-box-shadow: 3px 9px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 3px 9px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 3px 9px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.feature__description {
+    width: 100%;
+    max-width: 156px;
+    text-align: center;
+}
+
+/* Стили specifications */
+
+.specifications {
+    padding: 50px 0;
+}
+
+.specifications-list {
+    list-style: none;   
+    position: relative;
+}
+
+.specifications-list__point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed grey;
+    margin-bottom: 15px;
+}
+
+.airpod-big {
+    display: none;
+}
+
+/* Стили delivery-set */
+
+.delivery-set {
+    padding: 50px 0;
+    background: rgb(225,225,225);
+    background: linear-gradient(90deg, rgba(225,225,225,1) 0%, rgba(251,250,250,1) 39%, rgba(175,175,175,1) 68%, rgba(136,136,136,1) 100%);
+
+}
+
+.delivery-set__icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.delivery-set__wrapper{
+    max-width: 25%;
+}
+
+.circle-icon {
+    width: 100%;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    aspect-ratio: 1;
+}
+
+.circle-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Стили description-with-offer */
+
+.description-with-offer {
+    padding: 30px 0;
+}
+
+.description-with-offer__block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.description-with-offer__point {
+    background-color: rgb(69,69,69);
+    padding: 50px 30px;
+}
+
+.description-with-offer__title {
+    margin-bottom: 10px;
+}
+
+.description-with-offer__description {
+    max-width: 519px;
+    margin-bottom: 20px;
+}
+
+.description-with-offer__img-wrapper {
+    width: 100%;
+    order: -1;
+}
+
+.description-with-offer__img {
+    object-fit: cover;
+    object-position: left;
+}
+
+.description-with-offer__point {
+    width: 100%;
+}
+
+/* Стили feedback */
+
+.feedback {
+    padding: 30px 0;
+}
+
+.feedback__elem {
+    width: 34%;
+    min-width: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10px 10px 40px;
+}
+
+
+.feedback__icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.feedback__elem > .feedback__icon,
+.feedback__elem > .text-big {
+    margin-bottom: 10px;
+}
+
+.feedback__elem > .text-small {
+    padding: 0 31px;
+    position: relative;
+}
+
+.quote-icon {
+    position: absolute;
+}
+
+.quote-icon_open {
+    top: 0;
+    left: 0;
+}
+
+.quote-icon_close {
+    right: 0;
+    top: 100%;
+}
+
+/* Стили how-to-make-an-order */
+
+.how-to-make-an-order {
+    padding: 30px 0;
+}
+
+.how-to-make-an-order__point {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.how-to-make-an-order__point > .circle-icon,
+.how-to-make-an-order__point > .title-number.title-number-big,
+.how-to-make-an-order > .text-bold,
+.how-to-make-an-order > .text-small {
+    margin-bottom: 15px;
+}
+
+.how-to-make-an-order__description {
+    text-align: center;
+    max-width: 212px;
+}
+
+/* Стили order-a-call */
+
+.order-a-call {
+    padding: 10px;
+}
+
+.order-a-call__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+.order-a-call__icon {
+    margin-right: 10px;
+}
+
+.order-a-call__text {
+    line-height: 16px;
+}
+
+.order-a-call__form {
+    display: flex;
+    justify-content: center;
+}
+
+.order-a-call__input {
+    padding: 7px 10px;
+    border-radius: 23px 0 0 23px;
+    min-width: 200px;
+    outline: none;
+    border: 0;
+    position: relative;
+    left: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Стили faq */
+
+.faq {
+    padding: 20px 0;
+}
+
+.faq__accordion {
+    margin-bottom: 20px;
+}
+
+
+
+.accordion__item {
+    margin-bottom: 5px;
+}
+
+.accordion__title {
+    background-color: #e4e8ea;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion__info {
+    background-color: #ebeff2;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    position: relative;
+    bottom: 3px;
+}
+
+.faq__form {
+    font-weight: 300;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.faq__text {
+    margin-bottom: 20px;
+}
+
+.faq__input {
+    width: 100%;
+    margin-bottom: 10px;
+    color: #fff;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    outline: 0;
+}
+
+.faq__input::placeholder {color: #fff;}
+
+.faq__form > h3, 
+.faq__form > p:first-child,
+.faq__form .button {
+    margin-bottom: 10px;
+}
+
+/* Стили footer */
+
+.footer {
+    padding: 20px;
+    color: #cecece;
+}
+
+
+.footer__link {
+    text-decoration: none;
+    color: #cecece;
+    transition: 0.3s;
+    font-size: 9px;
+}
+
+.footer__link:hover {
+    color: #fff;
+}
+
+
+/* Vertical Tablet */
+@media (min-width: 768px) {
+    .menu__list {
+        gap: 14px;  
+        padding: 0;
+    }
+
+    .menu__nav {
+        order: 0;
+    }
+
+    .airpods-intro__title {
+        text-align: start;
+    }
+
+    .intro-block__img {
+        padding: 0;
+    }
+
+    .airpods-intro > .button {
+        margin-bottom: 20px;
+    }
+
+    .advantages__point {
+        width: calc((100% / 5) - 40px);
+        border-right: 1px solid #c5c5c515;
+        margin-right: 10px;
+        flex-wrap: wrap;
+    }
+
+    .advantages__list {
+        justify-content: space-between;
+    }
+
+    .airpod-big {
+        display: block;
+        position: absolute;
+        width: 60%;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        transform: translate(10%, -50%);
+    }
+
+    .owl-carousel .owl-nav {
+        display: block;
+    }
+
+    .feature {
+        border-right: 5px solid grey;
+    }
+
+    .delivery-set__wrapper{
+        max-width: 15%;
+    }
+    
+    .description-with-offer__img-wrapper {
+        width: 33%;
+        order: 0;
+    }
+
+    .description-with-offer__img {
+        height: 100%;
+    }
+
+    .description-with-offer__point {
+        width: 67%;
+    }
+
+    .how-to-make-an-order__point {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .order-a-call__wrapper {
+        margin-bottom: 0;
+    }
+
+    .order-a-call__form {
+        height: 100%;
+        align-items: center;
+    }
+
+    .faq__accordion {
+        margin-bottom: 0;
+    }
+
+    .footer__link {
+        font-size: 10px;
+    }
+}
+
+/* Horizontal Tablet */
+@media (min-width: 992px) {
+    .header {
+        margin-bottom: 70px;
+    } 
+
+    .menu__list {
+        gap: 60px;
+    }
+
+    .intro-block_img {
+        padding: 0;
+    }
+
+    .airpod-big {
+        transform: translate(0, -50%);
+    }
+
+    .advantages__point {
+        flex-wrap: nowrap;
+    }
+
+    .order-a-call__form {
+        height: auto;
+        align-items: flex-start;
+    }
+}
+
+/* Desctop */
+@media (min-width: 1200px) {
+}
